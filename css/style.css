@@ -13,6 +13,12 @@ hr{
 	float: left; 
 	margin-left: 30px
 }
+.hr1{
+	border: 1px solid yellow;
+}
+.hr2{
+	border: 1px solid #0ff;
+}
 
 /* header css */
 .top-header{
@@ -215,6 +221,14 @@ hr{
 	color: red;
 	font-weight: bold;
 }
+.yellow{
+	color: yellow;
+	font-weight: bold;
+}
+.n_blue{
+	color: #0ff;
+	font-weight: bold;
+}
 .grey{
 	color: grey;
 }
@@ -277,16 +291,17 @@ hr{
 .center_left_vertical_menu ul li,.center_right_news_section ul li{
 	list-style:none
 }
-
+.center_left_vertical_menu ul li{
+		border-bottom:1px solid #696969;
+}
 .center_left_vertical_menu ul li a{
-	height:60px;
 	width:100%;
 	display:block;
-	line-height:50px;
+	line-height:25px;
 	text-decoration:none;
 	font-size:12px;
 	color:#696969;
-	border-bottom:1px solid #696969
+	padding: 10px 0px;
 }
 .center_right_news_section ul li a{
 	height:100px;
@@ -368,10 +383,12 @@ hr{
 .Img2{
 	margin-right: 15px;
 	margin-top: 15px;
+	width: 70px;
 }
 .Img3{
 	margin-right: 10px;
 	margin-left: 10px;
+	width: 80px;
 }
 .center_right_news_section h4{
 	padding-top: 6px;
@@ -530,6 +547,9 @@ hr{
 }
 .fst_sec_img, .snd_sec_img, .trd_sec_img{
 	display: flex;
+}
+.snd_sec_img{
+	margin: 5px 0px;
 }
 .card{
 	border-top: 1px solid #ccc;
