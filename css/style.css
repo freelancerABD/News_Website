@@ -152,16 +152,66 @@ hr{
 .next_slide{
 	color: red;
 }
-.right-bhdr{
+.search-container{
+	float: left;
+	width: 250px;
+}
+.search-container input{
+	border: none;
+	width: 75%;
+	height: 56px;
+	padding-left: 10px;
+}
+.search-container button{
+	border: none;
+	height: 58px;
+	width: 45px;
+	cursor: pointer;
+}
+.search-container .fa-search{
+	font-size: 18px;
+}
+.dropdown {
+  position: relative;
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 9999;
+}
+.dropdown-content ul li{
+	border-bottom: 1px solid #ccc;
+	width: 160px;
+}
+
+.dropdown-content ul li a{
+	text-decoration: none;
+	color: #000;
+	border-right: none;
+	text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .right-bhdr{
 	height: 60px;
 	width: 250px;
 	float: left;
 }
-.right-bhdr img{
-	height:40px;
-	float:right;
-	margin:10px
+.btn_search{
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+	font-size: 20px;
+	float: right;
 }
+
 .right-bhdr input{
 	line-height: 60px;
 	padding: 0px 0px 0px 10px;
@@ -169,7 +219,7 @@ hr{
 }
 .search_pointer{
 	cursor: pointer;
-}
+} */
 
 /* center body css */
 .center_body{
@@ -467,7 +517,7 @@ hr{
 }
 .backend_Image .listenNews{
 	background-image: url('../image/listenNews.PNG');
-	 height: 200px; 
+	height: 200px; 
   background-position: center; 
   background-repeat: no-repeat;
 }
@@ -748,20 +798,21 @@ hr{
 	width: 30%;
 	height: 32px;
 	position: absolute;
-	right: 160px;
+	right: 150px;
 	top: 12px;
 	border: 1px solid #ccc;
 }
 .right_foot_menu button{
 	position: absolute;
-	right: 30px;
+	right: 20px;
 	top: 12px;
+	cursor: pointer;
 }
 .right_foot_menu h3{
 	float: left;
 	position: absolute;
-	left: 390px;
-	top: 20px;
+	left: 408px;
+	top: 21px;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: bold;
@@ -814,165 +865,3 @@ hr{
 }
 
 
-
-
-
-
-
-
-
-/* 
-.center_body{
-	height: 1000px;
-	width: 1180px;
-	background-color:#000;
-	float:left
-}
-.center_left{
-	height: 1000px;
-	width: 250px;
-	background-color:#989897;
-	float:left
-}
-.center_middle{
-	height: 1000px;
-	width: 680px;
-	background-color:#365645;
-	float:left
-}
-.center_right{
-	height: 1000px;
-	width: 250px;
-	background-color:#343432;
-	float:left
-}
-
-.center_left_updated_section{
-	height: 70px;
-	width: 250px;
-	background-color:#fff;
-	float:left;
-	font-size:12px;
-	text-align:center;
-	line-height:70px
-}
-.center_left_news_section{
-	height: 560px;
-	width: 210px;
-	background-color:#000;
-	float:left;
-	color:#fff;
-	padding:20px
-}
-.center_middle_left{
-	height: 600px;
-	width: 398px;
-	padding:20px;
-	background-color:#fff;
-	float:left;
-	border:1px solid #ccc;
-	font-family: 'Roboto', sans-serif;
-}
-.center_middle_right{
-	height: 610px;
-	width: 208px;
-	background-color:#fff;
-	float:left;
-	padding:15px;
-	border:1px solid #ccc
-}
-.center_middle_bottom{
-	height: 320px;
-	width: 90%;
-	background-color:#fff;
-	float:left;
-	padding:5%
-}
-.center_middle_bottom_left{
-	height: 320px;
-	width: 50%;
-	background-color:#fff;
-	float:left;
-	border-top:3px solid #f00
-}
-.center_middle_bottom_right{
-	height: 320px;
-	width: 50%;
-	background-color:#fff;
-	float:left;
-	border-top:3px solid #f00
-}
-.center_middle_right_top_section{
-	height: 300px;
-	width: 208px;
-	background-color:#555;
-	float:left;
-}
-.center_middle_right_bottom_section{
-	height: 300px;
-	width: 208px;
-	background-color:#f00;
-	float:left;
-}
-.center_right_searchbar{
-	height: 70px;
-	width: 250px;
-	background-color:#fff;
-	float:left
-}
-
-.center_right_news{
-	height: 500px;
-	width: 220px;
-	padding:15px;
-	background-color:#fff;
-	float:left
-}
-
-
-.width100{
-	width:100%
-}
-.width80{
-	width:80%
-}
-.red{
-	color:red
-}
-
-.fontsize10{
-	font-size:10px
-}
-.textalign{
-	text-align:center
-}
-.gray{
-	color:#c9c9c9
-}
-
-.marginright10{
-	margin-right:10px
-}
-.read_additional{
-	height: 30px;
-	width:150px;
-	border:1px solid #ccc;
-	float:left
-}
-.readmore{
-	height: 30px;
-	width:110px;
-	border-right:1px solid #ccc;
-	float:left;
-	text-align:center;
-	line-height:30px
-}
-.comments{
-	height:30px;
-	width:39px;
-	float:left;
-}
-.msg_icon{
-	height:30px;
-	width:39px
-} */
